@@ -1,6 +1,11 @@
 #include <iostream>
+#include "Knapsackproblem.h"
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+knapsack kp;
+kp.get_elements();
+kp.operate();
+kp.show_result();
+return 0;
 }

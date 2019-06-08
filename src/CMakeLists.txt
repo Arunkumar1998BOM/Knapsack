@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.6)
+project (Knapsack)
+set(Sources Knapsackproblem.cpp)
+set(Headers Knapsackproblem.h)
+add_executable(Knapsack Knapsackproblem.h Knapsackproblem.cpp main.cpp )

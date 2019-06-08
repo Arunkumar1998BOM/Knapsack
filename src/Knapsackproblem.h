@@ -10,19 +10,20 @@ using namespace std;
 class knapsack{
     int no_of_items;
     int capacity_knapsack;
-    //Now we create a knapsack table
-    vector<vector<int>>knapsack_table;
 
-    int total_benefit;
     vector<int>weights;
     vector<int>values;
 
+    //Now we create a knapsack table
+    vector<vector<int>>knapsack_table;
+
+
+
 
 public:
-    // we shall define the constructor
-    knapsack(int _no_of_items, int _capacity_knapsack, const vector<int> &weights, const vector<int> &values);
+    void get_elements();
     //we are overloading the operator ()
-    void operator()();
+    void operate();
 
     void show_result();
 };
